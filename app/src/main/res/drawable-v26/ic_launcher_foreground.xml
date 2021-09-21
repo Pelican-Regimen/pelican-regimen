@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright 2021 Pelican Regimen
+
+This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+
+Pelican Regimen is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Pelican Regimen is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Pelican Regimen.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+  <path
+      android:pathData="M70,36v36h-3.6L66.4,57.6L61,57.6L61,43.2c0,-3.168 4.032,-7.2 9,-7.2zM40.6,36v12.6h3.6L44.2,36h3.6v12.6h3.6L51.4,36L55,36v12.6c0,3.978 -3.222,7.2 -7.2,7.2L47.8,72h-3.6L44.2,55.8a7.198,7.198 0,0 1,-7.2 -7.2L37,36h3.6z"
+      android:fillColor="#fff"
+      android:fillType="evenOdd"/>
+  <path
+      android:pathData="M0,0h108v108H0z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient
+          android:gradientRadius="71.14824"
+          android:centerX="29.74104"
+          android:centerY="29.68488"
+          android:type="radial">
+        <item android:offset="0" android:color="#19ffffff"/>
+        <item android:offset="1" android:color="#00ffffff"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+</vector>

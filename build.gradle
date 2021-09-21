@@ -1,0 +1,76 @@
+/*
+ * Copyright 2021 Pelican Regimen
+ *
+ * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ *
+ * Pelican Regimen is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Pelican Regimen is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Pelican Regimen.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+import com.pelicanregimen.buildsrc.Libs
+import com.pelicanregimen.buildsrc.Versions
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath Libs.androidGradlePlugin
+        classpath Libs.Kotlin.gradlePlugin
+    }
+}
+
+plugins {
+    id 'com.diffplug.spotless' version '5.15.0'
+}
+
+subprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+        if (!Libs.AndroidX.Compose.snapshot.isEmpty()) {
+            maven { url "https://androidx.dev/snapshots/builds/${Libs.AndroidX.Compose.snapshot}/artifacts/repository/" }
+        }
+        if (Libs.Accompanist.version.endsWith("SNAPSHOT")) {
+            maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+        }
+    }
+
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+        kotlinOptions {
+            // Treat all Kotlin warnings as errors (disabled by default)
+            allWarningsAsErrors = project.hasProperty("warningsAsErrors") ? project.warningsAsErrors : false
+
+            freeCompilerArgs += '-Xopt-in=kotlin.RequiresOptIn'
+            // Enable experimental coroutines APIs, including Flow
+            freeCompilerArgs += '-Xopt-in=kotlin.Experimental'
+
+            // Set JVM target to 1.8
+            jvmTarget = "1.8"
+        }
+    }
+
+    apply plugin: 'com.diffplug.spotless'
+    spotless {
+        kotlin {
+            target '**/*.kt'
+            targetExclude("$buildDir/**/*.kt")
+            targetExclude('bin/**/*.kt')
+
+            ktlint(Versions.ktlint).userData([android: "true"])
+            licenseHeaderFile rootProject.file('spotless/copyright.kt')
+        }
+    }
+}
