@@ -18,7 +18,7 @@
     along with Pelican Regimen.  If not, see <http://www.gnu.org/licenses/>.
     -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pelicanregimen">
+    package="com.pelicanregimen">
 
     <!--Load images from Unsplash-->
     <uses-permission android:name="android.permission.INTERNET" />

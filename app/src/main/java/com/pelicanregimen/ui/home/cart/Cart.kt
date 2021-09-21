@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -68,7 +69,8 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ChainStyle
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.pelicanregimen.R
+import com.google.accompanist.insets.statusBarsHeight
+import com.pelicanregimen.R
 import com.pelicanregimen.model.OrderLine
 import com.pelicanregimen.model.SnackCollection
 import com.pelicanregimen.model.SnackRepo
@@ -82,7 +84,6 @@ import com.pelicanregimen.ui.home.DestinationBar
 import com.pelicanregimen.ui.theme.AlphaNearOpaque
 import com.pelicanregimen.ui.theme.PelicanRegimenTheme
 import com.pelicanregimen.ui.utils.formatPrice
-import com.google.accompanist.insets.statusBarsHeight
 
 @Composable
 fun Cart(

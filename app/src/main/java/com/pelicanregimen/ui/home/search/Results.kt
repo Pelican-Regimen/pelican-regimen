@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -48,7 +49,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ChainStyle
 import androidx.constraintlayout.compose.ConstraintLayout
-import com.example.pelicanregimen.R
+import com.pelicanregimen.R
 import com.pelicanregimen.model.Filter
 import com.pelicanregimen.model.Snack
 import com.pelicanregimen.model.snacks

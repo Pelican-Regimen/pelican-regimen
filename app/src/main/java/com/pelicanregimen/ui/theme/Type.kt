@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +25,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.example.pelicanregimen.R
+import com.pelicanregimen.R
 
 private val Montserrat = FontFamily(
     Font(R.font.montserrat_light, FontWeight.Light),

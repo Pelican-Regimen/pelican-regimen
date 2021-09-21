@@ -1,7 +1,8 @@
 /*
  * Copyright 2021 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -52,14 +53,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import com.example.pelicanregimen.R
+import com.google.accompanist.flowlayout.FlowMainAxisAlignment
+import com.google.accompanist.flowlayout.FlowRow
+import com.pelicanregimen.R
 import com.pelicanregimen.model.Filter
 import com.pelicanregimen.model.SnackRepo
 import com.pelicanregimen.ui.components.FilterChip
 import com.pelicanregimen.ui.components.PelicanRegimenScaffold
 import com.pelicanregimen.ui.theme.PelicanRegimenTheme
-import com.google.accompanist.flowlayout.FlowMainAxisAlignment
-import com.google.accompanist.flowlayout.FlowRow
 
 @OptIn(ExperimentalAnimationApi::class)
 @Composable

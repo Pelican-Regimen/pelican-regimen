@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,6 +43,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.google.accompanist.insets.statusBarsHeight
 import com.pelicanregimen.model.Filter
 import com.pelicanregimen.model.SnackCollection
 import com.pelicanregimen.model.SnackRepo
@@ -50,7 +52,6 @@ import com.pelicanregimen.ui.components.PelicanRegimenDivider
 import com.pelicanregimen.ui.components.PelicanRegimenSurface
 import com.pelicanregimen.ui.components.SnackCollection
 import com.pelicanregimen.ui.theme.PelicanRegimenTheme
-import com.google.accompanist.insets.statusBarsHeight
 
 @Composable
 fun Feed(

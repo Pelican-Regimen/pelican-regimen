@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -62,7 +63,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.lerp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.lerp
-import com.example.pelicanregimen.R
+import com.google.accompanist.insets.navigationBarsPadding
+import com.google.accompanist.insets.statusBarsPadding
+import com.pelicanregimen.R
 import com.pelicanregimen.model.Snack
 import com.pelicanregimen.model.SnackCollection
 import com.pelicanregimen.model.SnackRepo
@@ -72,12 +75,10 @@ import com.pelicanregimen.ui.components.PelicanRegimenSurface
 import com.pelicanregimen.ui.components.QuantitySelector
 import com.pelicanregimen.ui.components.SnackCollection
 import com.pelicanregimen.ui.components.SnackImage
-import com.pelicanregimen.ui.theme.PelicanRegimenTheme
 import com.pelicanregimen.ui.theme.Neutral8
+import com.pelicanregimen.ui.theme.PelicanRegimenTheme
 import com.pelicanregimen.ui.utils.formatPrice
 import com.pelicanregimen.ui.utils.mirroringBackIcon
-import com.google.accompanist.insets.navigationBarsPadding
-import com.google.accompanist.insets.statusBarsPadding
 import kotlin.math.max
 import kotlin.math.min
 

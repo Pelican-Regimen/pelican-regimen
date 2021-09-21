@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -69,12 +70,12 @@ import androidx.core.os.ConfigurationCompat
 import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
-import com.example.pelicanregimen.R
+import com.google.accompanist.insets.navigationBarsPadding
+import com.pelicanregimen.R
 import com.pelicanregimen.ui.components.PelicanRegimenSurface
 import com.pelicanregimen.ui.home.cart.Cart
 import com.pelicanregimen.ui.home.search.Search
 import com.pelicanregimen.ui.theme.PelicanRegimenTheme
-import com.google.accompanist.insets.navigationBarsPadding
 
 fun NavGraphBuilder.addHomeGraph(
     onSnackSelected: (Long, NavBackStackEntry) -> Unit,

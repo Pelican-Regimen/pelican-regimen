@@ -1,7 +1,8 @@
 /*
  * Copyright 2021 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,8 +23,8 @@ import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
-import com.example.pelicanregimen.ui.PelicanRegimenApp
 import com.pelicanregimen.ui.MainActivity
+import com.pelicanregimen.ui.PelicanRegimenApp
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

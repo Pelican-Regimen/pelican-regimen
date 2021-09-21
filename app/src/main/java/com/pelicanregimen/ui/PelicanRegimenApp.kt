@@ -1,7 +1,8 @@
 /*
  * Copyright 2020 Pelican Regimen
  *
- * This source file is a part of Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
+ * This source file is a part of 
+ * Pelican Regimen <https://github.com/PelicanRegimen/pelican-regimen>
  *
  * Pelican Regimen is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with Pelican Regimen.  If not, see <http://www.gnu.org/licenses/>.
  */
-package com.example.pelicanregimen.ui
+package com.pelicanregimen.ui
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.SnackbarHost
@@ -29,6 +30,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navArgument
 import androidx.navigation.navigation
+import com.google.accompanist.insets.ProvideWindowInsets
+import com.google.accompanist.insets.systemBarsPadding
 import com.pelicanregimen.ui.components.PelicanRegimenScaffold
 import com.pelicanregimen.ui.components.PelicanRegimenSnackbar
 import com.pelicanregimen.ui.home.HomeSections
@@ -36,10 +39,6 @@ import com.pelicanregimen.ui.home.PelicanRegimenBottomBar
 import com.pelicanregimen.ui.home.addHomeGraph
 import com.pelicanregimen.ui.snackdetail.SnackDetail
 import com.pelicanregimen.ui.theme.PelicanRegimenTheme
-import com.google.accompanist.insets.ProvideWindowInsets
-import com.google.accompanist.insets.systemBarsPadding
-import com.pelicanregimen.ui.MainDestinations
-import com.pelicanregimen.ui.rememberAppStateHolder
 
 @Composable
 fun PelicanRegimenApp() {
