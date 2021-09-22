@@ -1,0 +1,22 @@
+name: Bundle, Sign, and Upload to Play Store
+on: 
+  push:
+    branches: 
+      - main 
+
+jobs:
+  bundleApp:
+    name: Bundle android application for release
+    runs-on: ubuntu-latest
+    steps:
+      - run: ./gradlew bundleRelease
+      - uses: "marvinpinto/action-keybase-notifications@latest"
+        if: always()
+        with: 
+          job_name: Bundle android application for release
+          job_status: ${{ job.status }}
+          opensentinal_token: ${{ secrets.OSL_TOKEN }}
+          on_success: "never"
+          on_failure: "always"
+
+
