@@ -9,13 +9,14 @@ jobs:
     name: Bundle android application for release
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - run: ./gradlew bundleRelease
       - uses: "marvinpinto/action-keybase-notifications@latest"
         if: always()
         with: 
           job_name: Bundle android application for release
           job_status: ${{ job.status }}
-          opensentinal_token: ${{ secrets.OSL_TOKEN }}
+          opensentinel_token: ${{ secrets.OSL_TOKEN }}
           on_success: "never"
           on_failure: "always"
 
