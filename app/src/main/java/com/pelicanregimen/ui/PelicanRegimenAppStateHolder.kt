@@ -49,6 +49,7 @@ object MainDestinations {
     const val HOME_ROUTE = "home"
     const val SNACK_DETAIL_ROUTE = "snack"
     const val SNACK_ID_KEY = "snackId"
+    const val REGIMEN = "regimen"
 }
 
 /**
