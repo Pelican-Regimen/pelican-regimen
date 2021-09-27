@@ -26,6 +26,7 @@ along with Pelican Regimen.  If not, see <http://www.gnu.org/licenses/>.
     <string name="home_search">Search</string>
     <string name="home_cart">My Cart</string>
     <string name="home_profile">Profile</string>
+    <string name="regimen">Regimen</string>
 
     <!-- Home -->
     <string name="label_filters">Filters</string>

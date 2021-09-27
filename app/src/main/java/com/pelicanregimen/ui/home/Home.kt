@@ -72,9 +72,11 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.compose.composable
 import com.google.accompanist.insets.navigationBarsPadding
 import com.pelicanregimen.R
+import com.pelicanregimen.ui.MainDestinations
 import com.pelicanregimen.ui.components.PelicanRegimenSurface
 import com.pelicanregimen.ui.home.cart.Cart
 import com.pelicanregimen.ui.home.search.Search
+import com.pelicanregimen.ui.regimen.RegimenScreen
 import com.pelicanregimen.ui.theme.PelicanRegimenTheme
 
 fun NavGraphBuilder.addHomeGraph(
@@ -93,6 +95,9 @@ fun NavGraphBuilder.addHomeGraph(
     composable(HomeSections.PROFILE.route) {
         Profile(modifier)
     }
+    composable(MainDestinations.REGIMEN) {
+        RegimenScreen()
+    }
 }
 
 enum class HomeSections(
@@ -103,7 +108,7 @@ enum class HomeSections(
     FEED(R.string.home_feed, Icons.Outlined.Home, "home/feed"),
     SEARCH(R.string.home_search, Icons.Outlined.Search, "home/search"),
     CART(R.string.home_cart, Icons.Outlined.ShoppingCart, "home/cart"),
-    PROFILE(R.string.home_profile, Icons.Outlined.AccountCircle, "home/profile")
+    PROFILE(R.string.regimen, Icons.Outlined.AccountCircle, MainDestinations.REGIMEN)
 }
 
 @Composable
